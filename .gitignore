@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/obj/Debug/netcoreapp3.1/CSVToSeed.csprojAssemblyReference.cache
+/obj/Debug/netcoreapp3.1/CSVToSeed.AssemblyInfoInputs.cache
+/obj/Debug/netcoreapp3.1/CSVToSeed.AssemblyInfo.cs
+/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+/CSVToSeed.csproj.user
+/.vs
