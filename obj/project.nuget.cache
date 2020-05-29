@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TLkRGX1f8dDsJPF+Dpb763RGkDF/hH/mFpeGdSmJDvm9+KTjV+GNVvea9HTYCAsNTwyDjonXGF/Jmn4zInkm8w==",
+  "success": true,
+  "projectFilePath": "F:\\CSVToSeed\\Seedlet\\CSVToSeed.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rimckenn\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
