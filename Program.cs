@@ -244,15 +244,14 @@ namespace CSVToSeed
             {
                 try
                 {
-                    var dcName = fileName.Split('-')[0];
+                    var dcName = fileName.Split('-')[0].Split('.')[1];
                     var row = new Row
                                   {
                                       DCName = dcName,
                                       Tag = Path.GetFileNameWithoutExtension(fileName),
-                                      Operation = "SeedUltra",
-                                      Policy = "Wan-v1"
+                                      Operation = "SeedUltra"
                                   };
-                    Console.WriteLine($"Copy and add this line to: {file}\n{ToXML(row)}");
+                    Console.WriteLine($"Copy and add this line to: {file}\n <Row DCName=\"{dcName}\" Tag=\"{row.Tag}\" Operation=\"SeedUltra\" />");
                 }
                 catch (Exception ex)
                 {
@@ -262,26 +261,6 @@ namespace CSVToSeed
             }
 
             return true;
-        }
-
-        public static T LoadFromXMLString<T>(string xmlText)
-        {
-            using (var stringReader = new System.IO.StringReader(xmlText))
-            {
-                var serializer = new XmlSerializer(typeof(T));
-                return (T)serializer.Deserialize(stringReader);
-            }
-        }
-
-
-        public static string ToXML<T>(T type)
-        {
-            using (var stringwriter = new System.IO.StringWriter())
-            {
-                var serializer = new XmlSerializer(type.GetType());
-                serializer.Serialize(stringwriter, type);
-                return stringwriter.ToString();
-            }
         }
 
         /// <summary>
